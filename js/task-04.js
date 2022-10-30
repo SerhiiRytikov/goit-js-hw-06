@@ -17,14 +17,14 @@ const refs = {
     span: document.querySelector("#value"),
   };
   
+  let counterValue = 0;
   const decrement = () => {
     counterValue -= 1;
   
     refs.span.textContent = counterValue;
   };
 
-  let counterValue = 0;
-  const increment = () => {
+    const increment = () => {
     counterValue += 1;
   
    refs.span.textContent = counterValue;
