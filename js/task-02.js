@@ -17,10 +17,10 @@ const ulIngredients = document.querySelector("#ingredients")
 const createMarkup = (ingredients) => { 
   return ingredients.map((ingredient) => {
     const liItem = document.createElement("li");
-    liItem.classList.add("item");
-    liItem.textContent = ingredient;
+      liItem.textContent = ingredient;
+      liItem.classList.add("item");
   return liItem;
   })
 }
-
+console.log(ingredients);
 ulIngredients.append(...createMarkup(ingredients))
