@@ -7,11 +7,11 @@
 // }
 
 // варіант2
-const inputRangeRef = document.querySelector("#font-size-control");
-const inputTextRef = document.querySelector("#text");
+const inputRange = document.querySelector("#font-size-control");
+const inputText = document.querySelector("#text");
 
 const handleInput = () => {
-  inputTextRef.style.fontSize = `${inputRangeRef.value}px`;
+  inputText.style.fontSize = `${inputRange.value}px`;
 };
 
-inputRangeRef.addEventListener("input", handleInput);
+inputRange.addEventListener("input", handleInput);
